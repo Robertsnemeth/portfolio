@@ -12,14 +12,14 @@ const Profile = () => {
     })
 
   return (
-    <section id="profile">
+    <section className="h-screen flex flex-col gap-2 justify-center" id="profile">
         <img src={me} alt="profile pic"
-        className="h-48 rounded-full shadow-3xl"/>
+        className="h-96 rounded-full shadow-3xl"/>
         <div className="text-center">
             <h1 className="uppercase tracking-[15px]">Full Stack Developer</h1>
-            <h1 className="text-white text-5xl">{text}<Cursor cursorStyle='_'/></h1>
+            <h1 className="text-white text-3xl md:text-5xl">{text}<Cursor cursorStyle='_'/></h1>
             <div >
-                <a className='m-2 hover:text-slate-500' href="">About</a>
+                <a className='m-2 hover:text-slate-500' href="about">About</a>
                 <a className='m-2 hover:text-slate-500' href="">Skills</a>
                 <a className='m-2 hover:text-slate-500' href="">Projects</a>
                 <a className='m-2 hover:text-slate-500' href="">Contact Me</a>

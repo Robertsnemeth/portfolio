@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='px-2 h-full'>
         <Header/>
         <Profile/>
         <About/>

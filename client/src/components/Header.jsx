@@ -28,7 +28,7 @@ const Header = () => {
             fgColor='gray'
             bgColor="transparent"
             />
-            <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Contact Me</p>
+            <p className="uppercase hidden md:flex md:p-2 text-sm text-gray-400">Contact Me</p>
         </div>
     </header>
   )
