@@ -1,11 +1,14 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import TrackingText from './styled_components/TrackingText';
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
+import SuccessMessage from './styled_components/SuccessMessage';
 
 const Contact = () => {
 
   const form = useRef();
+
+  const [ emailSent, setEmailSent ] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,6 +16,10 @@ const Contact = () => {
       .then(res => {
         console.log(res, "SUCCESS");
         e.target.reset();
+        setEmailSent(true)
+        setTimeout(() => {
+          setEmailSent(false)
+        }, 3000)
       })
       .catch(err => console.log(err, "ERROR"))
   };
@@ -34,6 +41,7 @@ const Contact = () => {
         <textarea name="message" className="bg-slate-800/50 px-6 py-2 border-b transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4" cols="30" rows="10" placeholder="Message..." ></textarea>
         <button className="border rounded bg-slate-900 px-6 py-2 hover:bg-slate-800 cursor-pointer text-white">SUBMIT</button>
       </form>
+      {emailSent && <SuccessMessage/>}
     </motion.div>
   )
 }
