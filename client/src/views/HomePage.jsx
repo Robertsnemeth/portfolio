@@ -6,16 +6,17 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { Route } from 'react-router-dom'
 
 const HomePage = () => {
   return (
-    <div className='px-2 h-full'>
+    <div className='h-full w-full'>
         <Header/>
-        <Profile/>
-        <About/>
-        <Skills/>
-        <Projects/>
-        <Contact/>
+        <Profile />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
         <Footer/>
     </div>
   )

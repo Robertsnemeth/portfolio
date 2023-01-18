@@ -1,10 +1,18 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 const Header = () => {
   return (
-    <header className='flex justify-between z-20'>
-        <div>
+    <header className='flex justify-between z-20 '>
+        <motion.div
+            initial={{ 
+              x: -200,
+              opacity: 0
+              }}
+            transition={{ duration: 1}}
+            whileInView={{ opacity: 1, x: 0}}
+          >
             <SocialIcon url="https://github.com/Robertsnemeth"
             fgColor="gray"
             bgColor="transparent"
@@ -21,15 +29,22 @@ const Header = () => {
             fgColor="gray"
             bgColor="transparent"
             className='hover:bg-slate-500 cursor-pointer'/>
-        </div>
-        <div className='flex items-center cursor-pointer p-1 hover:bg-slate-500'>
+        </motion.div>
+        <motion.div 
+          initial={{ 
+            x: 200,
+            opacity: 0
+            }}
+          transition={{ duration: 1}}
+          whileInView={{ opacity: 1, x: 0}}
+          className='flex items-center cursor-pointer p-1 hover:bg-slate-500'>
             <SocialIcon
             network='email'
             fgColor='gray'
             bgColor="transparent"
             />
             <p className="uppercase hidden md:flex md:p-2 text-sm text-gray-400">Contact Me</p>
-        </div>
+        </motion.div>
     </header>
   )
 }
