@@ -5,7 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
   return (
-    <header id="header" className='sticky top-0 flex justify-between z-20'>
+    <header id="header" className='sticky top-0 flex justify-between z-20 max-w-7xl'>
         <motion.div
           initial={{ 
             x: -200,
@@ -44,7 +44,7 @@ const Header = () => {
               network='email'
               fgColor='gray'
               bgColor="transparent"
-              className='overflow-auto'
+              className='overflow-hidden'
               />
               <p className="uppercase hidden md:flex md:p-2 text-sm text-gray-400">Contact Me</p>
             </motion.div>

@@ -10,7 +10,7 @@ const About = () => {
       initial={{ opacity: 0}}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="w-full sm:w-3/4 min-h-screen flex flex-col gap-8 justify-center border border-l-0 border-r-0 overflow-hidden relative snap-center">
+      className="w-full sm:w-3/4 min-h-screen flex flex-col gap-8 justify-center border border-l-0 border-r-0 overflow-hidden relative">
       <TrackingText>about</TrackingText>
       <motion.img
         initial={{ 

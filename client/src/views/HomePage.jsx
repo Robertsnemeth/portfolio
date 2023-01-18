@@ -6,11 +6,10 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { Route } from 'react-router-dom'
 
 const HomePage = () => {
   return (
-    <div className='min-w-screen snap-mandatory'>
+    <div className='min-w-screen min-h-screen'>
         <Header/>
         <Profile />
         <About />
