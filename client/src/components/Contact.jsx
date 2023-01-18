@@ -27,8 +27,8 @@ const Contact = () => {
       <TrackingText>Contact Me</TrackingText>
       <form onSubmit={sendEmail} ref={form} className='flex flex-col gap-2 w-3/4'>
         <div className='flex flex-col lg:flex-row gap-2 w-full'>
-            <input type="text" placeholder="Name" name="name" className="bg-slate-800/50 px-6 py-2 border-b transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>
-            <input type="email" placeholder="Email" name="email" className="bg-slate-800/50 px-6 py-2 border-b transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>
+            <input type="text" placeholder="Name" name="name" className="lg:w-1/2 bg-slate-800/50 px-6 py-2 border-b transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>
+            <input type="email" placeholder="Email" name="email" className="lg:w-1/2 bg-slate-800/50 px-6 py-2 border-b transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>
         </div>
         <input type="text" placeholder='Subject' name="subject" className="bg-slate-800/50 px-6 py-2 border-b transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>
         <textarea name="message" className="bg-slate-800/50 px-6 py-2 border-b transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4" cols="30" rows="10" placeholder="Message..." ></textarea>
