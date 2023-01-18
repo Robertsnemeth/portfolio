@@ -10,7 +10,7 @@ import { Route } from 'react-router-dom'
 
 const HomePage = () => {
   return (
-    <div className='min-w-screen'>
+    <div className='min-w-screen snap-mandatory'>
         <Header/>
         <Profile />
         <About />

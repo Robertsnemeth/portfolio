@@ -5,7 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 const Footer = () => {
   return (
     <footer className='sticky bottom-0 h-full'>
-      <Link to="#header">
+      <Link to="#profile">
         <BiChevronUpCircle size="50" className='opacity-50 hover:opacity-100'/>
       </Link>
     </footer>
