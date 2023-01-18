@@ -10,7 +10,7 @@ import { Route } from 'react-router-dom'
 
 const HomePage = () => {
   return (
-    <div className='h-full w-full'>
+    <div className='min-w-screen'>
         <Header/>
         <Profile />
         <About />

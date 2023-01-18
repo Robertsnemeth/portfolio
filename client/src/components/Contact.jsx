@@ -23,9 +23,9 @@ const Contact = () => {
       initial={{ opacity: 0}}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col w-3/4 justify-center items-center text-center gap-10 h-screen relative">
+      className="flex flex-col w-full sm:w-3/4 justify-center items-center text-center gap-10 h-screen relative">
       <TrackingText>Contact Me</TrackingText>
-      <form onSubmit={sendEmail} ref={form} className='flex flex-col gap-2 w-fit'>
+      <form onSubmit={sendEmail} ref={form} className='flex flex-col gap-2 w-3/4'>
         <div className='flex flex-col lg:flex-row gap-2 w-full'>
             <input type="text" placeholder="Name" name="name" className="bg-slate-800/50 px-6 py-2 border-b transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>
             <input type="email" placeholder="Email" name="email" className="bg-slate-800/50 px-6 py-2 border-b transition-all focus:text-gray-300 focus:border-gray-400/40 focus:border-b-4"/>

@@ -16,7 +16,7 @@ const Profile = () => {
     })
 
   return (
-    <section id="profile" className="h-screen flex flex-col gap-32 justify-center my-10">
+    <section id="profile" className="h-screen w-full sm:w-3/4 flex flex-col gap-32 justify-center my-10">
         <div className='relative'>
             <motion.img 
                 initial={{ 
@@ -34,12 +34,12 @@ const Profile = () => {
         </div>
         <div className="text-center z-10">
             <TrackingText>Full Stack Developer</TrackingText>
-            <h1 className="text-white text-2xl md:text-5xl">{text}<Cursor cursorStyle='_'/></h1>
+            <h1 className="text-white text-2xl md:text-4xl lg:text-5xl">{text}<Cursor cursorStyle='_'/></h1>
             <div >
                 <Link className='m-2 hover:text-slate-500' to="#about">About</Link>
-                <a className='m-2 hover:text-slate-500' href="#skills">Skills</a>
-                <a className='m-2 hover:text-slate-500' href="#projects">Projects</a>
-                <a className='m-2 hover:text-slate-500' href="#contact">Contact Me</a>
+                <Link className='m-2 hover:text-slate-500' to="#skills">Skills</Link>
+                <Link className='m-2 hover:text-slate-500' to="#projects">Projects</Link>
+                <Link className='m-2 hover:text-slate-500' to="#contact">Contact Me</Link>
             </div>
         </div>
     </section>
