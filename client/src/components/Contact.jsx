@@ -29,7 +29,7 @@ const Contact = () => {
       id="contact"
       initial={{ opacity: 0}}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1 }}
       className="flex flex-col w-full sm:w-3/4 justify-center items-center text-center gap-10 h-screen relative">
       <TrackingText>Contact Me</TrackingText>
       <form onSubmit={sendEmail} ref={form} className='flex flex-col gap-2 w-3/4'>

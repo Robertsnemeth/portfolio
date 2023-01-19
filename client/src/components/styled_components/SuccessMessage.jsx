@@ -1,15 +1,21 @@
 import React from 'react';
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const SuccessMessage = () => {
   return (
-    <motion.div
-    initial={{ opacity: 0}}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 1 }}
-    transitionEnd>
-        <h1 className="bg-green-500 p-2 text-white rounded">Your Message Was successfully Sent</h1>
-    </motion.div>
+    <AnimatePresence>
+      <motion.div
+      key="message"
+      initial={{ opacity: 0}}
+      exit={{ 
+        opacity: 0,
+        transition: { duration: 1}
+      }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}>
+          <h1 className="bg-green-500 p-2 text-white rounded">Your Message Was Successfully Sent</h1>
+      </motion.div>
+    </AnimatePresence>
   )
 }
 
