@@ -3,14 +3,15 @@ import TrackingText from './styled_components/TrackingText';
 import { motion } from "framer-motion";
 import Slider from './styled_components/Slider';
 import RottenPotatoes from '../assets/rotten-potatoes-home.PNG';
+import JCMobileDetailing from '../assets/jcmobile.png';
 
 const Projects = () => {
 
   const projectList = [{
-    title: "Rotten Potatoes",
-    image: RottenPotatoes,
-    description: "Rotten Potatoes was built for movie lovers. Compare watchlists with other users to see what they are watching and gather inspiration.Utilizing Login and Logout Authentication with JWT, add multiple watchlists loaded with any movie or tv show that you havn't gotten to yet. Compare watchlists with other users to see what they are watching and gather inspiration.",
-    link: "https://rotten-potatoes-alpha.vercel.app/rotten_potatoes/home_page"
+    title: "JC Mobile Detailing LLC",
+    image: JCMobileDetailing,
+    description: "This is the production website for JC Mobile Detaling LLC based out of Enumclaw, WA. It was built using Next.js and styled with TailwindCSS. Utlize this site to book an appointment to detail for vehilce!",
+    link: "https://www.jcmobiledetailing.com/"
   },
   {
     title: "Rotten Potatoes",
