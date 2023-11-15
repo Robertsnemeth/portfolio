@@ -34,7 +34,7 @@ const Header = () => {
         <Link to="#contact">
           <motion.div 
             initial={{ 
-              x: 200,
+              x: 30,
               opacity: 0
               }}
             transition={{ duration: 1}}
