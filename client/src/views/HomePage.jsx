@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 const HomePage = () => {
   return (
-    <div className='min-w-screen min-h-screen'>
+    <div className='w-screen min-h-screen'>
         <Header/>
         <Profile />
         <About />
