@@ -44,7 +44,6 @@ const Header = () => {
               network='email'
               fgColor='gray'
               bgColor="transparent"
-              className='overflow-hidden'
               />
               <p className="uppercase hidden md:flex md:p-2 text-sm text-gray-400">Contact Me</p>
             </motion.div>
