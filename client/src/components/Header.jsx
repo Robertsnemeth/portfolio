@@ -17,19 +17,19 @@ const Header = () => {
           <SocialIcon url="https://github.com/Robertsnemeth"
           fgColor="gray"
           bgColor="transparent"
-          className='hover:bg-slate-500 cursor-pointer focus:bg-slate-600'/>
+          className='cursor-pointer transition-all delay-75 hover:scale-125'/>
           <SocialIcon url="https://www.linkedin.com/in/robert-s-nemeth/"
           fgColor="gray"
           bgColor="transparent"
-          className='hover:bg-slate-500 cursor-pointer'/>
+          className='cursor-pointer transition-all delay-75 hover:scale-125'/>
           <SocialIcon url="https://www.twitter.com/YankeeSix"
           fgColor="gray"
           bgColor="transparent"
-          className='hover:bg-slate-500 cursor-pointer'/>
+          className='cursor-pointer transition-all delay-75 hover:scale-125'/>
           <SocialIcon url="https://www.instagram.com/yankeesix/"
           fgColor="gray"
           bgColor="transparent"
-          className='hover:bg-slate-500 cursor-pointer'/>
+          className='cursor-pointer transition-all delay-75 hover:scale-125'/>
         </motion.div>
         <Link to="#contact">
           <motion.div 
@@ -39,7 +39,7 @@ const Header = () => {
               }}
             transition={{ duration: 1}}
             whileInView={{ opacity: 1, x: 0}}
-            className='flex items-center cursor-pointer p-1 hover:bg-slate-500 '>
+            className='flex items-center cursor-pointer p-1 hover:underline '>
               <SocialIcon
               network='email'
               fgColor='gray'

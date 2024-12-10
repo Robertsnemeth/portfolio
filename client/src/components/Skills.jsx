@@ -27,7 +27,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, x: 0}}
           className="flex gap-6">
             <TbBrandJavascript size="90"/>
-            <GrReactjs size="90"/>
+            <TbBrandNextjs size="90"/>
             <SiTypescript size="90"/>
         </motion.div>
         <motion.div 
@@ -42,7 +42,7 @@ const Skills = () => {
             <FaCss3Alt size="45"/>
             <FaJava size="45"/>
             <FaPython size="45"/>
-            <TbBrandNextjs size="45"/>
+            <GrReactjs size="45"/>
         </motion.div>
         <motion.div 
           initial={{ 
