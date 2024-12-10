@@ -17,19 +17,23 @@ const Header = () => {
           <SocialIcon url="https://github.com/Robertsnemeth"
           fgColor="gray"
           bgColor="transparent"
-          className='cursor-pointer transition-all delay-75 hover:scale-125'/>
+          className='cursor-pointer transition-all delay-75 hover:scale-125'
+          target="_blank"/>
           <SocialIcon url="https://www.linkedin.com/in/robert-s-nemeth/"
           fgColor="gray"
           bgColor="transparent"
-          className='cursor-pointer transition-all delay-75 hover:scale-125'/>
+          className='cursor-pointer transition-all delay-75 hover:scale-125'
+          target="_blank"/>
           <SocialIcon url="https://www.twitter.com/YankeeSix"
           fgColor="gray"
           bgColor="transparent"
-          className='cursor-pointer transition-all delay-75 hover:scale-125'/>
+          className='cursor-pointer transition-all delay-75 hover:scale-125'
+          target="_blank"/>
           <SocialIcon url="https://www.instagram.com/yankeesix/"
           fgColor="gray"
           bgColor="transparent"
-          className='cursor-pointer transition-all delay-75 hover:scale-125'/>
+          className='cursor-pointer transition-all delay-75 hover:scale-125'
+          target="_blank"/>
         </motion.div>
         <Link to="#contact">
           <motion.div 
