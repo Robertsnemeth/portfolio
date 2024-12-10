@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import TrackingText from './styled_components/TrackingText';
 import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
